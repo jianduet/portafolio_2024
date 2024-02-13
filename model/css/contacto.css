@@ -1,0 +1,264 @@
+@font-face {
+  font-family: 'AMERSN';
+  src: url('/model/font/AMERSN__.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Azonix';
+    src: url('/model/font/Azonix.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Kiona';
+    src: url('/model/font/Kiona.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+ }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/model/img/portafolio_fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "AMERSN";
+  font-size: 20px;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0px auto;
+  display: grid;
+  grid-gap: 0px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(7, auto);
+}
+
+.contenedor .navegador {
+  background-color: black;
+  grid-column: 1/4;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  padding: 0 2rem;
+  max-width: 1000px;
+  width: 100%;
+  height: 65px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  font-family: "AMERSN";
+}
+
+.contenedor .navegador img {
+  width: 120px;
+}
+
+.contenedor .navegador .links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 65px;
+}
+
+.contenedor .navegador .sta {
+  text-decoration: none;
+  color: white; 
+  background-color: orangered;
+  padding: 0.009px 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: scale.2 ease;
+}
+
+.contenedor .navegador .sta:hover {
+  color: orangered;
+  scale: 1.05;
+  color: white;
+}
+
+.contenedor .navegador .sta:active {
+  scale: 0.95;
+}
+
+.contenedor .navegador .menu {
+  cursor: pointer;
+  width: 50px;
+  height: auto;
+  margin-top: 7px;
+  display: none;
+  
+}
+
+.contenedor .andae_logo {
+  display: none;
+  color:white;
+  font-family: "AMERSN";
+  font-size: 40px;
+}
+
+.contenedor .lis {
+  list-style: none;
+}
+
+.contenedor .bt {
+  text-decoration: none;
+  color: white;
+}
+
+.contenedor .bt:hover {
+  color: orangered;
+}
+
+.contenedor .bt_drop {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.contenedor .bt_drop:hover {
+  color: orangered;
+}
+
+/*drom menu*/
+
+.contenedor .menu_cascada {
+ position: absolute;
+ right: 10%;
+ top: 110%;
+ width: 200px;
+ height: 220px;
+ background: rgba(72, 70, 70, 0.469);
+ backdrop-filter: blur(20px);
+ border-radius: 15px;
+ overflow: hidden;
+ display: none;
+ 
+}
+
+.contenedor .menu_cascada .sta {
+  text-decoration: none;
+  color: white; 
+  background-color: orangered;
+  padding: 0.009px 15px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 20px;
+  transition: scale.2 ease;
+}
+
+.contenedor .menu_cascada .sta:hover {
+  color: orangered;
+  scale: 1.05;
+  color: white;
+}
+
+.contenedor .menu_cascada .sta:active {
+  scale: 0.95;
+}
+
+.contenedor .menu_cascada .lis {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor .menu_cascada .Descubre {
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*responsitive nav bar*/
+
+@media (max-width: 800px) {
+  .contenedor .navegador .links ,
+  .contenedor .bt .menu_cascada {display: none;}
+
+  .contenedor .navegador .menu {display: block;}
+  .contenedor .navegador .links {display: none;}
+}
+
+@media (max-width: 800px) {
+  .contenedor .navegador .logo {display: none;}
+  .contenedor .andae_logo {display: block;}
+}
+
+.contenedor .banner_contactos {
+  grid-template-columns: 1/4;
+  grid-column: 1/4;
+  display: grid;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 300px;
+  height: 100%;
+}
+
+.contenedor .contenedor_contactos {
+    display: grid;
+    grid-template-columns: 1/4;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    background-color: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 1200px;
+    height: 100%;
+
+}
+
+.contenedor .contenedor_contactos .formulario_contactos {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-family: 'Azonix';
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Kiona';
+    color: rgb(66, 66, 66);
+    font-size: 15px;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}

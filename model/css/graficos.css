@@ -1,0 +1,442 @@
+@font-face {
+    font-family: 'AMERSN';
+    src: url('/model/font/AMERSN__.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Azonix';
+    src: url('/model/font/Azonix.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Kiona';
+    src: url('/model/font/Kiona.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+ }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-image: url("/model/img/portafolio_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "AMERSN";
+    font-size: 20px;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+  }
+  
+  .contenedor .navegador {
+    background-color: black;
+    grid-column: 1/4;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 0 2rem;
+    max-width: 1000px;
+    width: 100%;
+    height: 65px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: "AMERSN";
+  }
+  
+  .contenedor .navegador img {
+    width: 120px;
+  }
+  
+  .contenedor .navegador .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 65px;
+  }
+  
+  .contenedor .navegador .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .navegador .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .navegador .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .navegador .menu {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+    margin-top: 7px;
+    display: none;
+    
+  }
+  
+  .contenedor .andae_logo {
+    display: none;
+    color:white;
+    font-family: "AMERSN";
+    font-size: 40px;
+  }
+  
+  .contenedor .lis {
+    list-style: none;
+  }
+  
+  .contenedor .bt {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contenedor .bt:hover {
+    color: orangered;
+  }
+  
+  .contenedor .bt_drop {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contenedor .bt_drop:hover {
+    color: orangered;
+  }
+  
+  /*drom menu*/
+  
+  .contenedor .menu_cascada {
+   position: absolute;
+   right: 10%;
+   top: 110%;
+   width: 200px;
+   height: 220px;
+   background: rgba(72, 70, 70, 0.469);
+   backdrop-filter: blur(20px);
+   border-radius: 15px;
+   overflow: hidden;
+   display: none;
+   
+  }
+  
+  .contenedor .menu_cascada .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .menu_cascada .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .menu_cascada .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .menu_cascada .lis {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor .menu_cascada .Descubre {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*responsitive nav bar*/
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .links ,
+    .contenedor .bt .menu_cascada {display: none;}
+  
+    .contenedor .navegador .menu {display: block;}
+    .contenedor .navegador .links {display: none;}
+  }
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .logo {display: none;}
+    .contenedor .andae_logo {display: block;}
+  }
+
+  /* galería */
+
+  .contenedor .contenedor_galeria_grafico .banner_galeria_grafico{
+    display: grid;
+    width: 1000px;
+    height: 400px;
+    /*max-width: 1000 px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;*/
+    background-color: blue;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria {
+    display: grid;
+    width: 1000px;
+    
+    /*max-width: 1000 px;
+    width: 100%;
+    max-height: 400px;
+    height: 100%;*/
+    background-color: blueviolet;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_1{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_2{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_3{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_4{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_5{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_6{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_7{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_8{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_9{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_10{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_11{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_12{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_13{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_14{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+.contenedor .contenedor_galeria_grafico .imagenes_galeria .cuadro_galeria_15{
+    display: flex;
+    width: 330px;
+    height: 300px;
+    background-color: crimson;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+
+/*footer*/
+
+.contenedor .pie {
+    grid-column: 1/4;
+    background-image: url("../img/footer_background.png");
+    max-height: 150px;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "AMERSN";
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 800px){
+    .contenedor .pie {
+      background-image: url("../img/footer_background.png");
+      max-height: 150px;
+      height: 120px;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      font-size: 13px;
+    }
+  }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>andae</title>
+    <link rel="stylesheet" href="/model/css/estilos.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+    <header class="land">
+        <img src="/model/img/banner.jpg" alt=""> 
+        <h1>Hola</h1>
+        <h3 class="introduccion"> 
+            Mí  nombre es <br>
+            Andrés Uribe soy<br>
+            Diseñador Gráfico y<br>
+            Desarrollador de Software
+        </h3>
+    </header>
+
+
+<!-- contenedor general -->
+
+<div class="contenedor">
+
+    <!-- menu de navegacion -->
+    <div class="navegador">
+        <div class="logo">
+            <img src="/model/img/logo.jpg" alt="">
+        </div>
+        <div class="espacio"></div>
+        <div class="andae_logo">
+            andae
+        </div>
+            <ul class="links">
+                <li class="lis"><a class="bt" href="index.html">home</a></li>
+                <li class="lis"><a class="bt" href="view\portafolio.html">Portafolio</a></li>
+                <li class="lis"><a class="bt" href="view\servicios.html">Servicios</a></li>
+                <li class="lis"><a class="bt" href="view\contacto.html">contacto</a></li>
+                <li class="lis"><a class="bt" href="#">Blog</a></li>
+            </ul>
+        <div class="links">
+            <a class="sta" href="view\descubre.html">Descubre</a>
+        </div>
+        <div id="boton">
+            <img class="menu" src="/model/img/menu.png" alt="">
+        </div>
+        <div id="boton_cascada" class="menu_cascada">
+            <div class="lis"><a class="bt" href="index.html">home</a></div>
+            <div class="lis"><a class="bt" href="view\portafolio.html">Portafolio</a></div>
+            <div class="lis"><a class="bt" href="view\servicios.html">Servicios</a></div>
+            <div class="lis"><a class="bt" href="view\contacto.html">contacto</a></div>
+            <div class="lis"><a class="bt" href="#">Blog</a></div>
+            <div class="Descubre"><a class="sta" href="view\descubre.html">Descubre</a></div>
+        </div>
+    </div>  
+
+    
+
+    <!-- java script menu navegacion     -->
+
+    <script>
+        const button = document.getElementById('boton');
+        const boton_cascada = document.getElementById('boton_cascada');
+
+        button.addEventListener('click', () => {
+        if (boton_cascada.style.display == 'block') {
+            boton_cascada.style.display = 'none';
+        } 
+        else {
+        boton_cascada.style.display = 'block';
+        }
+        });      
+    </script>
+
+
+    <!-- contenido sobre mi -->
+
+    <main class="contenido">
+        <div class="info">
+            <h3>Sobre Mí</h3>
+            <p class="info_hv">
+                Mi enfoque en los últimos años ha sido el desarrollo de imágen corporativa, diseño de material publicitario y de marketing online, así como el desarrollo de nuevas habilidades en el campo del desarrollo de páginas web y aplicaciones.
+            </p>
+            <div class="curriculum"><button><a id="decoracion" href="#">Descargar C/v</a></button> </div>       
+        </div>
+       
+        <div class="datos">
+            <h3>Información Personal</h3>
+                <ul>
+                    <ol>Fecha de nacimiento: 29/10/1991</ol>
+                    <ol>Correo electrónico: andresgrafico3d@gmail.com</ol> 
+                    <ol>País: Colombia</ol>
+                    <ol>Ciudad: Medellín</ol>
+                    <ol>Linkedin: <a id="decoracion_2" href="#">Andres_Uribe </a></ol>
+                </ul>        
+        </div>
+        
+        <div class="exp">
+            <h3>Experiencia</h3>
+                <p>Maquila internacional <br>de confección S.A.S. <br>2024 - 2020<br><br>Instruimos<br>2020 - 2019<br><br>Insuapliques<br>2018 - 2017</p>
+        </div>    
+    </main>
+<br>
+    <section class="educacion">
+        <p>Competente en el manejo de programas de diseño como Adobe Illustrator, Photoshop e InDesign, con destreza en la creación de gráficos, ilustraciones, logotipos y diseño de publicaciones.</p>
+        <br>
+        <p>Capacidad de generar ideas innovadoras y soluciones creativas para proyectos de diseño</p>
+        <br>
+        <p>Diseño de interfaces de usuario intuitivas</p>
+        <br>
+        <p>Conocimiento de impresión y producción</p>
+        <br>
+        <p>Diseñar y desarrollar arquitecturas de sistemas escalables</p>
+        <br>
+        <p>Habilidades para escribir código de manera óptima, clara y funcional, además de realizar pruebas, depuración, y mantenimiento de aplicaciones</p>
+        <p>Diseño conceptual de bases de datos, ejecución de consultas SQL y gestión eficiente de datos</p>
+        <p>Aprendizaje ininterrumpido con adaptación constante</p>
+    </section>
+
+
+    <aside class="aside">
+        <p>&lt;aside id="voluntad"&gt;<br>
+            &lt;div&gt;Analista y desarrollador de software&lt;/div&gt;</p>
+        <p>&lt;div&gt;Diseñador Gráfico publicitario&lt;/div&gt;<br>
+            &lt;/aside&gt;</p>
+        
+    </aside>
+<br>
+    <section class="cuadro">
+        <div class="widget_1"><a href="#"><h3>Fotografía</h3></a></div>
+        <div class="widget_2"><a href="#"><h3>Web</h3></a></div>
+        <div class="widget_3"><a href="/view/galeria_grafico.html"><h3>Gráficos</h3></a></div>
+    </section>
+<br>
+    <footer class="pie">
+        <div>Todos los derechos reservados <br>Medellín - Colombia <br>2024</div>
+    </footer>
+<br>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+

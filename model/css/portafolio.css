@@ -1,0 +1,465 @@
+@font-face {
+    font-family: 'AMERSN';
+    src: url('/model/font/AMERSN__.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(190, 203, 214);
+    font-family: "AMERSN";
+    font-size: 20px;
+    background-image: url("/model/img/portafolio_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+  }
+  
+  .contenedor .navegador {
+    background-color: black;
+    grid-column: 1/4;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 0 2rem;
+    max-width: 1000px;
+    width: 100%;
+    height: 65px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: "AMERSN";
+  }
+  
+  .contenedor .navegador img {
+    width: 120px;
+  }
+  
+  .contenedor .navegador .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 65px;
+  }
+  
+  .contenedor .navegador .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .navegador .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .navegador .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .navegador .menu {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+    margin-top: 7px;
+    display: none;
+    
+  }
+  
+  .contenedor .andae_logo {
+    display: none;
+    color:white;
+    font-family: "AMERSN";
+    font-size: 40px;
+  }
+  
+  .contenedor .lis {
+    list-style: none;
+  }
+  
+  .contenedor .bt {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contenedor .bt:hover {
+    color: orangered;
+  }
+  
+  .contenedor .bt_drop {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contenedor .bt_drop:hover {
+    color: orangered;
+  }
+  
+  /*drom menu*/
+  
+  .contenedor .menu_cascada {
+   position: absolute;
+   right: 10%;
+   top: 110%;
+   width: 200px;
+   height: 220px;
+   background: rgba(72, 70, 70, 0.469);
+   backdrop-filter: blur(20px);
+   border-radius: 15px;
+   overflow: hidden;
+   display: none;
+   
+  }
+  
+  .contenedor .menu_cascada .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .menu_cascada .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .menu_cascada .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .menu_cascada .lis {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor .menu_cascada .Descubre {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*responsitive nav bar*/
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .links ,
+    .contenedor .bt .menu_cascada {display: none;}
+  
+    .contenedor .navegador .menu {display: block;}
+    .contenedor .navegador .links {display: none;}
+  }
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .logo {display: none;}
+    .contenedor .andae_logo {display: block;}
+  }
+
+  /*fondo portafolio*/
+
+  .contenedor .fondo_portafolio{
+    display: grid;
+    justify-content: center;   
+    grid-template-columns: 1/4;
+    grid-template-rows: 1/4;
+    grid-column: 1/4;
+    margin: 0px auto;
+    max-width: 1250px;
+    width: 100%;
+    height: 1060px;
+    background-color: none;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-1{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-1 .cuadro-img-1{
+    max-width: 310px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-2{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-image: url("/model/img/fondo_portafolio_texto_cuadro_2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 630px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-2 p{
+    color: white;
+    font-family: "AMERSN";
+    font-size: 17px;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .contenedor .fondo_portafolio .cuadro-3{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    background-image: url("/model/img/fondo_portafolio_texto_cuadro_3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 630px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    padding: 3px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-3 p{
+    color: white;
+    font-family: "AMERSN";
+    font-size: 17px;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-4{
+    display: flex;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-4 .cuadro-img-4{
+    max-width: 310px;
+    min-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-5{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-5 .cuadro-img-5{
+    max-width: 310px;
+    max-height: 300px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-6{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 3/4;
+    background-image: url("/model/img/fondo_portafolio_texto_cuadro_6.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 630px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+    padding: 3px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-6 p{
+    color: white;
+    font-family: "AMERSN";
+    font-size: 17px;
+    text-align: center;
+    padding: 40px;
+  }
+
+  /* responsitive contenedor */
+
+  @media (max-width: 800px){
+    .contenedor .fondo_portafolio{
+    display: grid;
+    justify-content: center;   
+    grid-template-columns: 1/4;
+    grid-template-rows: 1/7;
+    grid-column: 2/3;
+    margin: 0px auto;
+    max-height: 2000px;
+    height: 2000px;
+   
+  }
+
+  .contenedor .fondo_portafolio .cuadro-1{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 1/2;
+    max-height: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-2{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    max-height: 350px;
+    height: 350px;
+    background-image: url("/model/img/fondo_portafolio_texto_800px.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-2 p{
+    font-size: 10px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-4{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 3/4;
+    max-height: 300px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+  
+  .contenedor .fondo_portafolio .cuadro-3{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-image: none;
+    max-height: 300px;
+    height: 300px;
+    background-image: url("/model/img/fondo_portafolio_texto_800px.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-3 p{
+    font-size: 10px;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-5{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 5/6;
+    max-height: 250px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-6{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    background-image: none;
+    max-height: 300px;
+    height: 300px;
+    background-image: url("/model/img/fondo_portafolio_texto_800px.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  .contenedor .fondo_portafolio .cuadro-6 p{
+    font-size: 10px;
+  }
+}
+
+  /*footer*/
+
+  .contenedor .pie {
+    grid-column: 1/4;
+    background-image: url("../img/footer_background.png");
+    max-height: 150px;
+    height: 120px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "AMERSN";
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 800px){
+    .contenedor .pie{
+    font-size: 5px;
+    overflow: hidden;
+    }
+  }
+  
+  @media (max-width: 600px){
+    .contenedor .pie{
+      font-size: 3px;
+      overflow: hidden;
+    }
+  }
+
+  

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios</title>
+  <link rel="stylesheet" href="/model/css/servicios.css">
+  
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="serviciosweb">
+    <div class="imagebaner">
+      <img src="/model/img/servicios_cabezal.jpg" alt="" class="baner">
+    </div>
+  </div>
+
+  <div class="contenedor">
+    <!-- menu de navegacion -->
+    <div class="navegador">
+      <div class="logo">
+        <img src="/model/img/logo.jpg" alt="">
+      </div>
+      <div class="espacio"></div>
+      <div class="andae_logo">
+        andae
+      </div>
+      <ul class="links">
+        <li class="lis"><a class="bt" href="../index.html">home</a></li>
+        <li class="lis"><a class="bt" href="portafolio.html">Portafolio</a></li>
+        <li class="lis"><a class="bt" href="servicios.html">Servicios</a></li>
+        <li class="lis"><a class="bt" href="contacto.html">contacto</a></li>
+        <li class="lis"><a class="bt" href="#">Blog</a></li>
+      </ul>
+      <div class="links">
+        <a class="sta" href="descubre.html">Descubre</a>
+      </div>
+      <div id="boton">
+        <img class="menu" src="/model/img/menu.png" alt="">
+      </div>
+      <div id="boton_cascada" class="menu_cascada">
+        <div class="lis"><a class="bt" href="../index.html">home</a></div>
+        <div class="lis"><a class="bt" href="portafolio.html">Portafolio</a></div>
+        <div class="lis"><a class="bt" href="servicios.html">Servicios</a></div>
+        <div class="lis"><a class="bt" href="contacto.html">contacto</a></div>
+        <div class="lis"><a class="bt" href="#">Blog</a></div>
+        <div class="Descubre"><a class="sta" href="descubre.html">Descubre</a></div>
+      </div>
+    </div>  
+
+    <!-- java script menu navegacion -->
+    
+    <script>
+      const button = document.getElementById('boton');
+      const boton_cascada = document.getElementById('boton_cascada');
+    
+      button.addEventListener('click', () => {
+      if (boton_cascada.style.display == 'block') {
+      boton_cascada.style.display = 'none';
+      } else {
+      boton_cascada.style.display = 'block';
+      }
+      });      
+    </script>
+
+    <!-- inicio servicios -->
+        
+    <div class="introduccion">
+      <h1 class="titulo_servicios">Servicios web</h1> 
+      <p class="parrafo_servicios">La creación de una página web es un proceso complejo. No es suficiente con diseñar páginas webs atractivas, hay que diseñar páginas webs rápidas, intuitivas, fáciles de encontrar, comunicativas, que atraigan y retengan a los visitantes y que sobre todo, que cumplan los objetivos de su empresa. Un buen servicio de diseño web es esencial para que su estrategia de marketing digital funcione, mientras que un mal diseño web arruinará su credibilidad.</p>
+    </div>
+
+    <div class="webamedida">
+      <h1 class="titulo_disenoamedida">Diseño web a medida</h1>
+      <p class="parrafo_disenoamedida">Cada proyecto cuenta con unas características únicas. hemos desarrollado nuestros servicios de diseño poniendo especial énfasis en las necesidades de nuestros clientes.
+      Utilizamos un sistema de alto rendimiento que te permite administrar los contenidos de la página web, como noticias, productos, servicios, entre otros.</p>
+    </div>
+
+    <!-- contenedor 2 como trabajamos -->
+    <div class="contenedorComoTrabajamos">
+      <div class="introduccion_comotrabajamos">
+        <h1 class="titulo_comotrabajamos">¿Cómo trabajamos el diseño web?</h1>
+        <p class="parrafo_comotrabajamos">Entendemos el proceso de creación de páginas cómo un proceso integral, Este desarrollo se estructura en las siguientes fases:</p>
+      </div>
+                           
+      <div class="cuadro_1_estudioyanalisis">
+        <p>1. Estudio y análisis de tu negocio, objetivos y competencia, para poder definir la estrategia online que tu proyecto necesita.</p> 
+      </div>
+    
+      <div class="cuadro_1_imagenestudioyanalisis">
+        <!-- imagen referente a cuadro 1 -->
+      </div>
+        
+      <div class="cuadro_2_Definirmensaje">
+        <p>2. Definir el mensaje que se desea comunicar para implementar los elementos comunicativos necesarios en el diseño web y la generación de contenidos.</p>
+      </div>
+    
+      <div class="cuadro_2_imagenDefinirmensaje">
+        <!-- imagen referente a cuadro 2 -->
+      </div>
+        
+      <div class="cuadro_3_disenoyprogramacion">
+        <p>3. Realizar el diseño y la programación de la página web.</p>
+      </div>
+    
+      <div class="cuadro_3_imagendisenoyprogramacion">
+        <!-- imagen referente a cuadro 3 -->
+      </div>
+        
+      <div class="cuadro_4_mantenimiento">
+        <p>4. Una vez publicada la página nuestro equipo se encarga de su mantenimiento, y despliega nuestro plan de marketing digital combinando los canales elegidos: posicionamiento orgánico o SEO, Google Ads, redes sociales, etc.</p>
+      </div>
+    
+      <div class="cuadro_4_imagenmantenimiento">
+        <!-- imagen referente a cuadro 4 -->
+      </div>
+        
+      <div class="cuadro_5_acompanamiento">
+        <p>5. Monitorizamos todo el proceso, asesorándote y acompañándote en todo momento para obtener conjuntamente los mejores resultados. Creamos informes de seguimiento a tu medida y nos reunimos para valorarlos de forma periódica.</p>
+      </div>
+    
+      <div class="cuadro_5_imagenacompanamiento">
+        <!-- imagen referente a cuadro 5 -->
+      </div>
+        
+      <div class="parrafo_complemento">
+        <p>Además, para aquellos proyectos que empiezan de cero o que requieren de una re-orientación, trabajamos la imágen corporativa y la activación de marca</p>
+      </div>
+    </div>
+    
+    <!--contenedor Categorías-->
+
+    <div class="contenedor_Categorias_paginaweb">
+      <div class="aside_img_izquierdo">
+        <!-- izquierdo img -->
+      </div>
+
+      <div class="Categorias_paginaweb">
+        <div class="Categorias_paginaweb_cuadro_1">
+          <h1 class="titulo_sitioweb">Sitio Web y Presencia en Internet</h1>
+          <p class="parrafo_sitioweb">Dominio, Hosting, Diseño de la página web, Web responsive, Accesibilidad, Autogestionable, Posicionamiento básico, Optimización SEO.</p>
+        </div>
+
+        <div class="Categorias_paginaweb_cuadro_2">
+          <h1 class="titulo_comercioelectronico">Comercio Electrónico</h1>
+          <p class="parrafo_comercioelectronico">Creación de la tienda online, Métodos de pago, Diseño Responsive, Accesibilidad, Posicionamiento, Optimización SEO, Autogestionable y Formas de envío.</p>
+        </div>
+
+        <div class="Categorias_paginaweb_cuadro_3">
+          <h1 class="titulo_redessociales">Gestión de Redes Sociales</h1>
+          <p class="parrafo_redessociales">Social Media Plan, Monitorización de redes sociales, Optimización de la red y Auditoría Social Media, Gestión de una red social y Publicación de posts semanales.</p>
+        </div>
+
+        <div class="Categorias_paginaweb_cuadro_4">
+          <h1 class="titulo_basesdedatos">Bases de datos</h1>
+          <p class="parrafo_basesdedatos">Integración de datos con otras bases de datos y Creación de paneles de datos estructurados.</p>
+        </div>
+
+      </div>
+      
+      <div class="aside_img_derecho">
+        <!-- derecho img -->
+      </div>
+
+    </div>
+
+    <div class="Funcionalidades_servicios">
+      <h1 class="titulo_Funcionalidades_servicios">Funcionalidades y servicios</h1>
+      <p>Los servicios que podemos ofrecerte son los siguientes:
+      <br>
+      <br>
+      <b>Dominio:</b> nuevo dominio para el cliente, beneficiaria durante un plazo mínimo de doce meses. La titularidad del dominio será en su totalidad del cliente.
+      <br>
+      <br>
+      <b>Hosting:</b> alojamiento de la página web desarrollada durante un plazo mínimo de doce meses. 
+      <br>
+      <br>
+      <b>Diseño de la página web:</b> estructura web con un mínimo de 3 páginas o apartados. Se consideran páginas o apartados de una web, elementos tales como: página de inicio (Landing Page), presentación de la empresa, formulario de contácto, descripción de productos, datos de contácto, mapa del sitio (site map), etc.
+      <br>
+      <br>
+      <b>Web responsive:</b> las páginas web diseñadas deben adaptarse para ser funcionales en todo tipo de dispositivos. 
+      <br>
+      <br>
+      <b>Accesibilidad:</b> el diseño debe cumplir con criterios de conformidad de nivel AA de las Pautas WCAG-2.1. 
+      <br>
+      <br>
+      <b>Autogestionable:</b> se deberá proveer una plataforma de gestión de contenidos para el beneficiario, de manera que sea autónomo a la hora de modificar el contenido de sus páginas web, sin la necesidad de recurrir al soporte de la empresa proveedora.
+      <br>
+      <br>
+      <b>Posicionamiento básico en internet:</b> Posicionamiento de la información básica del negocio, contácto y perfíl de la empresa en los principales sites, redes de negocio o directorios de empresas y profesionales.
+      <br>
+      <br>
+      <b>Creación de la tienda online o E-Commerce y alta del catálogo de productos:</b> producción de un catálogo, importación o carga de los productos o artículos del cliente. El número de referencias a cargar por el agente digitalizador será de al menos 50 referencias de productos, salvo que el cliente no disponga de este número, en cuyo caso podrá ser menor.
+      <br>
+      <br>
+      <b>Métodos de pago:</b> configuración e integración de los métodos de pago.
+      <br>
+      <br>
+      <b>Formas de envío:</b> configuración e integración de métodos de envío digital y físico de los productos comercializados por el beneficiario en la tienda online.
+      <br>
+      <br>
+      <b>Social Media:</b> definición e implementación de una estrategia de redes sociales alineada con la misión y visión del cliente, que sea relevante y conecte con los potenciales clientes, y fidelice a aquellos usuarios que ya lo sean.
+      <br>
+      <br>
+      <b>Monitorización de redes sociales:</b> monitorización y control periódico a través de métricas de referencia del impacto de las acciones, para cuantificar los resultados y comprobar si se están cumpliendo los objetivos marcados en la estrategia.
+      <br>
+      <br>
+      <b>Optimización de la red/Auditoría Social Media:</b> análisis de los diferentes canales sociales para poder optimizar el rendimiento.
+      <br>
+      <br>
+      <b>Gestión de una red social:</b> administración del perfil/usuario del cliente en, al menos, una red social.
+      <br>
+      <br>
+      <b>Publicación de posts semanales:</b> publicación por parte del agente digitalizador de un mínimo de 4-8 entradas (posts) mensuales.
+      <br>
+      <br>
+      <b>Integración con diversas plataformas:</b> disponibilidad de APIs o Web Services para la consolidación de la información y datos de toda la empresa.</p>
+    </div>
+
+    <footer class="pie">
+      <div>Todos los derechos reservados <br>Medellín - Colombia <br>2024</div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

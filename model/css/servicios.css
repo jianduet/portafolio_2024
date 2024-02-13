@@ -1,0 +1,852 @@
+  @font-face {
+    font-family: 'AMERSN';
+    src: url('/model/font/AMERSN__.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Azonix';
+    src: url('/model/font/Azonix.otf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'Kiona';
+    src: url('/model/font/Kiona.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color: rgb(190, 203, 214);
+    font-family: "AMERSN";
+    font-size: 20px;
+    background-image: url("/model/img/portafolio_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .serviciosweb .imagebaner{
+    display: flex;
+    grid-column: 1/4;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .serviciosweb .imagebaner .baner{
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0px auto;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, auto);
+  }
+  
+  .contenedor .navegador {
+    background-color: black;
+    grid-column: 1/4;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 0 2rem;
+    max-width: 1000px;
+    width: 100%;
+    height: 65px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    font-family: "AMERSN";
+  }
+  
+  .contenedor .navegador img {
+    width: 120px;
+  }
+  
+  .contenedor .navegador .links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    height: 65px;
+  }
+  
+  .contenedor .navegador .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .navegador .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .navegador .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .navegador .menu {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+    margin-top: 7px;
+    display: none;
+    
+  }
+  
+  .contenedor .andae_logo {
+    display: none;
+    color:white;
+    font-family: "AMERSN";
+    font-size: 40px;
+  }
+  
+  .contenedor .lis {
+    list-style: none;
+  }
+  
+  .contenedor .bt {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .contenedor .bt:hover {
+    color: orangered;
+  }
+  
+  .contenedor .bt_drop {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+  
+  .contenedor .bt_drop:hover {
+    color: orangered;
+  }
+  
+  /*drom menu*/
+  
+  .contenedor .menu_cascada {
+   position: absolute;
+   right: 10%;
+   top: 110%;
+   width: 200px;
+   height: 220px;
+   background: rgba(72, 70, 70, 0.469);
+   backdrop-filter: blur(20px);
+   border-radius: 15px;
+   overflow: hidden;
+   display: none;
+   
+  }
+  
+  .contenedor .menu_cascada .sta {
+    text-decoration: none;
+    color: white; 
+    background-color: orangered;
+    padding: 0.009px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: scale.2 ease;
+  }
+  
+  .contenedor .menu_cascada .sta:hover {
+    color: orangered;
+    scale: 1.05;
+    color: white;
+  }
+  
+  .contenedor .menu_cascada .sta:active {
+    scale: 0.95;
+  }
+  
+  .contenedor .menu_cascada .lis {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contenedor .menu_cascada .Descubre {
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*responsitive nav bar*/
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .links ,
+    .contenedor .bt .menu_cascada {display: none;}
+  
+    .contenedor .navegador .menu {display: block;}
+    .contenedor .navegador .links {display: none;}
+  }
+  
+  @media (max-width: 800px) {
+    .contenedor .navegador .logo {display: none;}
+    .contenedor .andae_logo {display: block;}
+  }
+
+  /*diseño web servicios*/
+
+  .contenedor .introduccion {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    grid-template-rows: 1/3;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 250px;
+    height: 100%;
+    padding: 50px 90px; 
+    overflow: hidden;
+    background-image: url("/model/img/fondo_1000_250_x2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .contenedor .introduccion .titulo_servicios {
+    font-family: "Azonix";
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor .introduccion .parrafo_servicios {
+    font-family: "Kiona";
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .contenedor .webamedida {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    grid-template-rows: 1/3;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 200px;
+    background-image: url("/model/img/fondo_1000_250_x1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 90px; 
+    overflow: hidden;
+  }
+
+  .contenedor .webamedida .titulo_disenoamedida {
+    font-family: "Azonix";
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .contenedor .webamedida .parrafo_disenoamedida {
+    font-family: "Kiona";
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /* responsitive contenedor */
+
+  @media (max-width: 800px){
+    .contenedor .introduccion {
+      max-width: 1000px;
+      width: 100%;
+      max-height: 480px;
+      height: 100%;
+    }
+    
+    .contenedor .webamedida {
+      max-width: 1000px;
+      width: 100%;
+      max-height: 400px;
+      height: 100%;
+    }
+
+  }
+
+  /*inicio contenedor 2*/
+
+  .contenedor .contenedorComoTrabajamos{
+    display: grid;
+    justify-content: center;   
+    grid-template-columns: 1/4;
+    grid-template-rows: repeat(10, auto);
+    grid-column: 1/4;
+    margin: 0px auto;
+    max-width: 1000px;
+    width: 100%;
+  }
+
+  .contenedor .contenedorComoTrabajamos .introduccion_comotrabajamos {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    grid-template-rows: 1/3;
+    max-width: 1000px;
+    width: 100%;
+    max-height: 200px;
+    background-image: url("/model/img/fondo_1000_250_x2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 90px; 
+    overflow: hidden;
+  }
+
+  .contenedor .contenedorComoTrabajamos .titulo_comotrabajamos {
+    font-family: "Azonix";
+    color: white;
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .contenedor .contenedorComoTrabajamos .parrafo_comotrabajamos {
+    font-family: "Kiona";
+    color: white;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  /*cuadro 1*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_1_estudioyanalisis{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 4/5;
+    width: 700px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_texto_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    overflow: hidden;
+    font-family: "Kiona";
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_1_imagenestudioyanalisis{
+    display: flex;   
+    grid-column: 3/4;
+    grid-row: 4/5;
+    width: 300px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  /*cuadro 2*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_2_imagenDefinirmensaje{
+    display: flex;   
+    grid-column: 1/2;
+    grid-row: 5/6;
+    width: 300px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+   .contenedor .contenedorComoTrabajamos .cuadro_2_Definirmensaje{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 5/6;
+    width: 700px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_texto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    overflow: hidden;
+    font-family: "Kiona";
+  }
+
+  /*cuadro 3*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_3_disenoyprogramacion{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 6/7;
+    width: 700px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_texto_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    overflow: hidden;
+    font-family: "Kiona";
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_3_imagendisenoyprogramacion{
+    display: flex;   
+    grid-column: 3/4;
+    grid-row: 6/7;
+    width: 300px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  /*cuadro 4*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_4_imagenmantenimiento{
+    display: flex;   
+    grid-column: 1/2;
+    grid-row: 7/8;
+    width: 300px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+   .contenedor .contenedorComoTrabajamos .cuadro_4_mantenimiento{
+    display: flex;
+    grid-column: 2/4;
+    grid-row: 7/8;
+    width: 700px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_texto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    overflow: hidden;
+    font-family: "Kiona";
+  }
+
+  /*cuadro 5*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_5_acompanamiento{
+    display: flex;
+    grid-column: 1/3;
+    grid-row: 8/9;
+    width: 700px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_texto_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 40px; 
+    overflow: hidden;
+    font-family: "Kiona";
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_5_imagenacompanamiento{
+    display: flex;   
+    grid-column: 3/4;
+    grid-row: 8/9;
+    width: 300px;
+    height: 300px;
+    background-image: url("/model/img/como_trabajamos_cuadro_5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .contenedor .contenedorComoTrabajamos .parrafo_complemento{
+    grid-column: 1/4;
+    grid-row: 9/10;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Kiona";
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    background-image: url("/model/img/fondo_1000_250_x1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    font-family: "Kiona";
+  }
+
+  /* responsitive contenedor */
+
+  @media (max-width: 800px){
+
+  .contenedor .contenedorComoTrabajamos .introduccion_comotrabajamos {
+    max-width: 1000px;
+    width: 100%;
+    max-height: 250px;
+    height: 100%;
+    grid-row: 1/2;
+  }
+
+  /*cuadro 1*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_1_imagenestudioyanalisis{
+    display: flex;   
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-image: url("/model/img/como_trabajamos_cuadro_1.jpg");  
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_1_estudioyanalisis{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  /*cuadro 2*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_2_imagenDefinirmensaje{
+    display: flex;   
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-image: url("/model/img/como_trabajamos_cuadro_2.jpg");
+  }
+
+   .contenedor .contenedorComoTrabajamos .cuadro_2_Definirmensaje{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 7/8;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  /*cuadro 3*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_3_imagendisenoyprogramacion{
+    display: flex;   
+    grid-column: 2/3;
+    grid-row: 8/9;
+    background-image: url("/model/img/como_trabajamos_cuadro_3.jpg");
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_3_disenoyprogramacion{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 9/10;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  /*cuadro 4*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_4_imagenmantenimiento{
+    display: flex;   
+    grid-column: 2/3;
+    grid-row: 10/11;
+    background-image: url("/model/img/como_trabajamos_cuadro_4.jpg");
+  }
+
+   .contenedor .contenedorComoTrabajamos .cuadro_4_mantenimiento{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 11/12;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  /*cuadro 5*/
+
+  .contenedor .contenedorComoTrabajamos .cuadro_5_imagenacompanamiento{
+    display: flex;   
+    grid-column: 2/3;
+    grid-row: 12/13;
+    background-image: url("/model/img/como_trabajamos_cuadro_5.jpg");
+  }
+
+  .contenedor .contenedorComoTrabajamos .cuadro_5_acompanamiento{
+    display: flex;
+    grid-column: 1/4;
+    grid-row: 13/14;
+    max-width: 700px;
+    width: 100%;
+    max-height: 300px;
+    height: 100%;
+  }
+
+  .contenedor .contenedorComoTrabajamos .parrafo_complemento{
+    grid-column: 1/4;
+    grid-row: 14/15;
+    max-width: 1000px;
+    width: 100%;
+  }
+  }
+
+  /*categorías*/
+
+  .contenedor .contenedor_Categorias_paginaweb{
+    display: grid;
+    justify-content: center;   
+    grid-template-columns: 1/4;
+    grid-template-rows: repeat(7, auto);
+    grid-column: 1/4;
+    margin: 0px auto;
+    max-width: 1000px;
+    width: 100%;
+    background-color: none;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .aside_img_izquierdo {
+    display: flex;   
+    grid-column: 1/2;
+    grid-row: 9/10;
+    width: 200px;
+    height: 800px;
+    background-image: url("/model/img/asside_izq.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb {
+    display: grid;   
+    grid-column: 2/3;
+    grid-row: 9/10;
+    grid-template-rows: 1/5;
+    grid-template-columns: 1/4;
+    max-width: 600px;
+    width: 100%;
+    height: 800px;
+    background-image: url("/model/img/Categorias_paginaweb_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    text-align: left;
+    display: grid;
+    color: white;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_1 .titulo_sitioweb{
+    font-family: "Azonix";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_1 .parrafo_sitioweb{
+    font-family: "Kiona";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_2{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    text-align: right;
+    display: grid;
+    color: white;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_2 .titulo_comercioelectronico{
+    font-family: "Azonix";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_2 .parrafo_comercioelectronico{
+    font-family: "Kiona";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_3{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    text-align: left;
+    display: grid;
+    color: white;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_3 .titulo_redessociales{
+    font-family: "Azonix";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_3 .parrafo_redessociales{
+    font-family: "Kiona";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_4{
+    grid-row: 4/5;
+    grid-column: 3/4;
+    text-align: right;
+    display: grid;
+    color: white;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_4 .titulo_basesdedatos{
+    font-family: "Azonix";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .Categorias_paginaweb .Categorias_paginaweb_cuadro_4 .parrafo_basesdedatos{
+    font-family: "Kiona";
+    font-size: 15px;
+  }
+
+  .contenedor .contenedor_Categorias_paginaweb .aside_img_derecho {
+    display: flex;   
+    grid-column: 3/4;
+    grid-row: 9/10;
+    width: 200px;
+    height: 800px;
+    background-image: url("/model/img/asside_der.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  /* responsitive categorías */
+
+  @media (max-width: 800px){
+    .contenedor .contenedor_Categorias_paginaweb{
+      display: grid;   
+      grid-column: 1/4;
+      max-width: 1000px;
+      width: 100%;
+    }
+  
+    .contenedor .contenedor_Categorias_paginaweb .aside_img_izquierdo {
+      display: none; 
+    }
+
+    .contenedor .contenedor_Categorias_paginaweb .aside_img_derecho {
+      display: none;
+    }
+  }
+
+  /*Funcionalidades y servicios*/
+
+  .contenedor .Funcionalidades_servicios {
+    display: grid;   
+    grid-column: 1/4;
+    grid-row: 10/11;
+    width: 1000px;
+    height: 1500px;
+    background-image: url("/model/img/funcionalidades_y_servicios_fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    font-family: "Kiona";
+  }
+
+  .contenedor .Funcionalidades_servicios .titulo_Funcionalidades_servicios{
+    font-family: "Azonix";
+    text-align: center;
+  }
+
+  .contenedor .Funcionalidades_servicios b{
+    font-size: 20px;
+  }
+
+  @media (max-width: 800px){
+    .contenedor .Funcionalidades_servicios {
+      max-width: 1000px;
+      width: 100%;
+      max-height: 2400px;
+      height: 100%;
+      background-image: url("/model/img/funcionalidades_y_servicios_fondo.jpg");
+    }
+  }
+
+  /*footer*/
+
+  .contenedor .pie {
+    grid-column: 1/4;
+    grid-row: 11/12;
+    background-image: url("../img/footer_background.png");
+    max-height: 150px;
+    height: 120px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: "AMERSN";
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 800px){
+    .contenedor .pie {
+      background-image: url("../img/footer_background.png");
+      max-height: 150px;
+      height: 120px;
+      max-width: 1000px;
+      width: 100%;
+      display: flex;
+      font-size: 13px;
+    }
+  }
